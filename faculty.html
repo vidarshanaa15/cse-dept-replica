@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty - Computer Science & Engineering Department</title>
+    <meta name="description"
+        content="Meet our distinguished faculty members specializing in various areas of computer science and engineering">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>CS&E Department</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faculty.html" class="nav-link active">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="research.html" class="nav-link">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="student-corner.html" class="nav-link">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Faculty</h1>
+                <p>Meet our distinguished educators and researchers</p>
+            </div>
+        </section>
+
+        <section class="faculty-section">
+            <div class="container">
+                <div class="faculty-controls">
+                    <input type="text" id="facultySearch" placeholder="Search faculty by name or specialization..."
+                        class="search-input">
+                    <select id="facultyFilter" class="filter-select">
+                        <option value="all">All Specializations</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="software">Software Engineering</option>
+                        <option value="data">Data Science</option>
+                        <option value="networks">Computer Networks</option>
+                        <option value="systems">Computer Systems</option>
+                    </select>
+                </div>
+
+                <div class="faculty-grid" id="facultyGrid">
+                    <div class="faculty-card" data-specialization="ai">
+                        <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg"
+                            alt="Dr. John Smith">
+                        <div class="faculty-info">
+                            <h3>Dr. John Smith</h3>
+                            <p class="faculty-position">Professor & Head of Department</p>
+                            <p class="faculty-specialization">Artificial Intelligence, Machine Learning</p>
+                            <p class="faculty-education">Ph.D. Computer Science, Stanford University</p>
+                            <p class="faculty-experience">Experience: 20 years</p>
+                            <p class="faculty-contact">📧 john.smith@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="cybersecurity">
+                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg"
+                            alt="Dr. Maria Garcia">
+                        <div class="faculty-info">
+                            <h3>Dr. Maria Garcia</h3>
+                            <p class="faculty-position">Associate Professor</p>
+                            <p class="faculty-specialization">Cybersecurity, Network Security</p>
+                            <p class="faculty-education">Ph.D. Computer Science, MIT</p>
+                            <p class="faculty-experience">Experience: 15 years</p>
+                            <p class="faculty-contact">📧 maria.garcia@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="software">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
+                            alt="Dr. Lisa Chen">
+                        <div class="faculty-info">
+                            <h3>Dr. Lisa Chen</h3>
+                            <p class="faculty-position">Associate Professor</p>
+                            <p class="faculty-specialization">Software Engineering, Web Technologies</p>
+                            <p class="faculty-education">Ph.D. Computer Science, Carnegie Mellon</p>
+                            <p class="faculty-experience">Experience: 12 years</p>
+                            <p class="faculty-contact">📧 lisa.chen@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="data">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                            alt="Dr. Robert Johnson">
+                        <div class="faculty-info">
+                            <h3>Dr. Robert Johnson</h3>
+                            <p class="faculty-position">Professor</p>
+                            <p class="faculty-specialization">Data Science, Big Data Analytics</p>
+                            <p class="faculty-education">Ph.D. Computer Science, UC Berkeley</p>
+                            <p class="faculty-experience">Experience: 18 years</p>
+                            <p class="faculty-contact">📧 robert.johnson@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="networks">
+                        <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg"
+                            alt="Dr. Priya Sharma">
+                        <div class="faculty-info">
+                            <h3>Dr. Priya Sharma</h3>
+                            <p class="faculty-position">Assistant Professor</p>
+                            <p class="faculty-specialization">Computer Networks, IoT</p>
+                            <p class="faculty-education">Ph.D. Computer Science, IIT Delhi</p>
+                            <p class="faculty-experience">Experience: 8 years</p>
+                            <p class="faculty-contact">📧 priya.sharma@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="systems">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg"
+                            alt="Dr. Michael Brown">
+                        <div class="faculty-info">
+                            <h3>Dr. Michael Brown</h3>
+                            <p class="faculty-position">Associate Professor</p>
+                            <p class="faculty-specialization">Computer Systems, Operating Systems</p>
+                            <p class="faculty-education">Ph.D. Computer Science, University of Washington</p>
+                            <p class="faculty-experience">Experience: 14 years</p>
+                            <p class="faculty-contact">📧 michael.brown@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="ai">
+                        <img src="https://images.pexels.com/photos/2182969/pexels-photo-2182969.jpeg"
+                            alt="Dr. Emily Davis">
+                        <div class="faculty-info">
+                            <h3>Dr. Emily Davis</h3>
+                            <p class="faculty-position">Assistant Professor</p>
+                            <p class="faculty-specialization">Machine Learning, Computer Vision</p>
+                            <p class="faculty-education">Ph.D. Computer Science, Georgia Tech</p>
+                            <p class="faculty-experience">Experience: 6 years</p>
+                            <p class="faculty-contact">📧 emily.davis@university.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card" data-specialization="software">
+                        <img src="https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg"
+                            alt="Dr. Ahmed Hassan">
+                        <div class="faculty-info">
+                            <h3>Dr. Ahmed Hassan</h3>
+                            <p class="faculty-position">Assistant Professor</p>
+                            <p class="faculty-specialization">Database Systems, Software Architecture</p>
+                            <p class="faculty-education">Ph.D. Computer Science, University of Toronto</p>
+                            <p class="faculty-experience">Experience: 7 years</p>
+                            <p class="faculty-contact">📧 ahmed.hassan@university.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No faculty members found matching your search criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CS&E Department</h3>
+                    <p>Excellence in Computer Science and Engineering education since 1985</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="infrastructure.html">Infrastructure</a></li>
+                        <li><a href="research.html">Research</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Students</h3>
+                    <ul>
+                        <li><a href="student-corner.html">Student Corner</a></li>
+                        <li><a href="#placement">Placements</a></li>
+                        <li><a href="#alumni">Alumni</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 University Campus<br>City, State - 123456</p>
+                    <p>📞 +91 12345 67890</p>
+                    <p>✉️ cse@university.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CS&E Department. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
