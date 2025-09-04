@@ -15,6 +15,9 @@ const toggleBtn = document.getElementById("darkModeToggle");
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
     toggleBtn.textContent = "☀️"; // show sun when dark mode is active
+    // document.getClassName("logo-img").src = "images/logodark.png";
+    
+    
 } else {
     toggleBtn.textContent = "🌙"; // show moon when light mode is active
 }
