@@ -13,24 +13,27 @@ const toggleBtn = document.getElementById("darkModeToggle");
 
 // Load saved theme from localStorage
 if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    toggleBtn.textContent = "☀️"; // show sun when dark mode is active
+  document.body.classList.add("dark-mode");
+  toggleBtn.textContent = "☀️"; // show sun when dark mode is active
+  document.querySelector(".logo-img").src = "images/logodark.png";
 } else {
-    toggleBtn.textContent = "🌙"; // show moon when light mode is active
+  toggleBtn.textContent = "🌙"; // show moon when light mode is active
+  document.querySelector(".logo-img").src = "images/logowhite.png";
 }
 
 toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "☀️"; 
-        localStorage.setItem("theme", "dark");
-    } else {
-        toggleBtn.textContent = "🌙"; 
-        localStorage.setItem("theme", "light");
-    }
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+    document.querySelector(".logo-img").src = "images/logodark.png";
+  } else {
+    toggleBtn.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+    document.querySelector(".logo-img").src = "images/logowhite.png";
+  }
 });
-
 
 // Mobile Navigation Menu Toggle
 function initMobileMenu() {
