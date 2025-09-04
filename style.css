@@ -164,6 +164,37 @@ p {
     border-radius: 3px;
 }
 
+/* Logo */
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Dark mode toggle button */
+.dark-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    color: white;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -1365,4 +1396,335 @@ p {
 .form-group select.success,
 .form-group textarea.success {
     border-color: #10b981;
+}
+
+/* ============================= */
+/* 🌙 Dark Mode Overrides        */
+/* ============================= */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Header & Navbar */
+body.dark-mode .header {
+    background-color: #1e1e1e;
+}
+body.dark-mode .nav-link {
+    color: #ddd;
+}
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+    color: #f97316;
+}
+body.dark-mode .bar {
+    background-color: #ddd;
+}
+body.dark-mode .dark-toggle {
+    color: #ddd;
+}
+
+/* Hero */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+body.dark-mode .hero-content h1 {
+    color: #f5f5f5;
+}
+body.dark-mode .hero-content p {
+    color: #aaa;
+}
+
+/* Stats Section */
+body.dark-mode .stats {
+    background-color: #222;
+    color: #f5f5f5;
+}
+body.dark-mode .stat-item p {
+    color: #ccc;
+}
+
+/* Highlights, Placement, Alumni, Cards */
+body.dark-mode .highlight-card,
+body.dark-mode .placement-item,
+body.dark-mode .alumni-card,
+body.dark-mode .program-card,
+body.dark-mode .achievement-item,
+body.dark-mode .lab-card,
+body.dark-mode .facility-item,
+body.dark-mode .research-card,
+body.dark-mode .project-item,
+body.dark-mode .publication-item,
+body.dark-mode .partnership-item,
+body.dark-mode .resource-card,
+body.dark-mode .activity-card,
+body.dark-mode .event-item,
+body.dark-mode .contact-form,
+body.dark-mode .location-card {
+    background: #1e1e1e;
+    color: #f5f5f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+body.dark-mode .highlight-card h3,
+body.dark-mode .alumni-card h3,
+body.dark-mode .placement-item h3,
+body.dark-mode .program-card h3,
+body.dark-mode .lab-info h3,
+body.dark-mode .facility-item h3,
+body.dark-mode .research-card h3,
+body.dark-mode .project-item h3,
+body.dark-mode .publication-item h3,
+body.dark-mode .partnership-item h3,
+body.dark-mode .resource-card h3,
+body.dark-mode .activity-card h3,
+body.dark-mode .event-info h3,
+body.dark-mode .contact-item h3,
+body.dark-mode .location-card h3 {
+    color: #f97316;
+}
+body.dark-mode p,
+body.dark-mode li {
+    color: #ccc;
+}
+
+/* Inputs, Forms */
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #eee;
+}
+body.dark-mode .form-group label {
+    color: #ddd;
+}
+
+/* Footer */
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+body.dark-mode .footer-section p,
+body.dark-mode .footer-section ul li a {
+    color: #bbb;
+}
+body.dark-mode .footer-section ul li a:hover {
+    color: #f97316;
+}
+body.dark-mode .footer-bottom {
+    border-top: 1px solid #333;
+    color: #777;
+}
+/* Resources Page */
+.resources-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.resources-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+.resources-section h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #1e3a8a;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.resource-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+}
+
+.resource-card h3 {
+  margin-bottom: 0.5rem;
+  color: #f97316;
+}
+
+.resource-card a {
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+/* Admissions Page */
+.admissions-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.admissions-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+.admissions-section h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #1e3a8a;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.admissions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.admission-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.admission-card:hover {
+  transform: translateY(-5px);
+}
+
+.admission-card h3 {
+  margin-bottom: 0.5rem;
+  color: #f97316;
+}
+
+.apply-box {
+  background: #f0f4ff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.btn-apply {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-apply:hover {
+  background: #0f1d4d;
+}
+/* Competitions Page */
+.competitions-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.competitions-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+.competitions-section h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #1e3a8a;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.competitions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.competition-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: left;
+}
+
+.competition-card:hover {
+  transform: translateY(-5px);
+}
+
+.competition-card h3 {
+  margin-bottom: 0.5rem;
+  color: #f97316;
+}
+
+/* ----- Prerequisites Page Styling ----- */
+.prereq-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.prereq-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.prereq-card {
+  background: #ffffff;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+}
+
+.prereq-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #0073e6;
+}
+
+.prereq-card ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.prereq-card ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
