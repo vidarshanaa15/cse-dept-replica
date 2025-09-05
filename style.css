@@ -117,7 +117,15 @@ p {
 .nav-logo h2 {
     color: white;
     margin: 0;
+    padding: 0;
     font-size: 1.5rem;
+}
+
+.nav-logo {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu {
@@ -167,8 +175,8 @@ p {
 /* Logo */
 .logo-img {
     height: 50px;
-    margin-right: 10px;
-    vertical-align: middle;
+    padding-left: 20px;
+    align-items: center;
 }
 
 /* Dark mode toggle button */
